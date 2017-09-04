@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { AboutUserComponent } from './about-user/about-user.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { UserService } from './shared/services/user.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FormsModule,
     AppRouting
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
