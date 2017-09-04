@@ -5,19 +5,14 @@ import { AppRouting } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { AboutUserComponent } from './about-user/about-user.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { UserService } from './shared/services/user.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
-    AboutUserComponent,
     ContactComponent,
     NotFoundComponent,
 
@@ -27,7 +22,7 @@ import { UserService } from './shared/services/user.service';
     FormsModule,
     AppRouting
   ],
-  providers: [UserService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
